@@ -9,6 +9,7 @@
  my $client = Mojo::Weixin->new(log_level=>"info",http_debug=>0);
  $client->load("ShowMsg");
  $client->load("Openwx",data=>{listen=>[{host=>$host,port=>$port}], post_api=>$post_api});
+ $client->load("ShowQRCodeInTerm");
  $client->load("MiPush",data=>{
     registration_ids=>["jnVAPODuZ4TsgpzNy2ftNMs700l0uemnu8DYsrzFnM1HAa9/vVbA+7B/K84gb2iD"],
     allow_group=>[""],
