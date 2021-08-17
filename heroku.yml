@@ -1,6 +1,6 @@
 build:
   docker:
-    worker: Dockerfile
+    web: Dockerfile
 setup:
   config:
     MOJO_WEIXIN_LOG_ENCODING: utf8
