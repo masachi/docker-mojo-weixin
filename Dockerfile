@@ -21,7 +21,7 @@ RUN yum -y --nogpgcheck install \
     perl-Encode-Locale && \
     yum clean all
 RUN cpanm -vn Test::More IO::Compress::Gzip Time::Seconds Term::ANSIColor IO::Socket::SSL Mojolicious
-RUN wget -q https://github.com/sjdy521/Mojo-Weixin/archive/master.zip -OMojo-Weixin.zip \
+RUN wget -q https://github.com/hexsum/Mojo-Weixin/archive/master.zip -OMojo-Weixin.zip \
     && unzip -qo Mojo-Weixin.zip \
     && cd Mojo-Weixin-master \
     && cpanm -v . \
