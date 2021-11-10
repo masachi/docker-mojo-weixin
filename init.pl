@@ -10,16 +10,16 @@
  # $client->load("ShowMsg");
  # $client->load("Openwx",data=>{listen=>[{host=>$host,port=>$port}], post_api=>$post_api});
  $client->load("MiPush",data=>{
-    registration_ids=>["jnVAPODuZ4TsgpzNy2ftNMs700l0uemnu8DYsrzFnM1HAa9/vVbA+7B/K84gb2iD"],
+    registration_ids=>[""],
     is_ban_official=>1
  });
  $client->load("PostQRcode",data=>{
-    smtp    =>  'smtp.yandex.com', #邮箱的smtp地址
+    smtp    =>  '', #邮箱的smtp地址
     port    =>  '465', #smtp服务器端口，默认25
-    from    =>  'rubbish.masachi@yandex.com', #发件人
-    to      =>  '1248076945@qq.com', #收件人 867303288
-    user    =>  'rubbish.masachi@yandex.com', #smtp登录帐号
-    pass    =>  'qkkjsqyttrnvsprr', #smtp登录密码
+    from    =>  '', #发件人
+    to      =>  '', #收件人 867303288
+    user    =>  '', #smtp登录帐号
+    pass    =>  '', #smtp登录密码
     tls     =>  1,      #可选，是否使用SMTPS协议，默认为0                            
                         #在没有设置的情况下，如果使用的端口为465，则该选项会自动被设置为1
 });
